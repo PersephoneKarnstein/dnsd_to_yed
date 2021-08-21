@@ -1,1 +1,5 @@
-ggc.com.xlsx
+*.xlsx
+*.graphml
+*.log
+*.pyc
+__pycache__/*

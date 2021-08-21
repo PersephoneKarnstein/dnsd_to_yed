@@ -2,18 +2,8 @@ import pandas as pd
 import pyyed, urllib, warnings, math
 from matplotlib import cm #for colorization of arbitrary numbers of lines
 
-
-title = """\033[38;5;35m______ _   _  _____     _                           _            \n|  _  \ \ | |/  ___|   | |                         | |           \n| | | |  \| |\ `--.  __| |_   _ _ __ ___  _ __  ___| |_ ___ _ __ \n| | | | . ` | `--. \/ _` | | | | '_ ` _ \| '_ \/ __| __/ _ \ '__|\n| |/ /| |\  |/\__/ / (_| | |_| | | | | | | |_) \__ \ ||  __/ |   \n|___/ \_| \_/\____/ \__,_|\__,_|_| |_| |_| .__/|___/\__\___|_|   \n            __            ___________    | |                  \n            \ \          |  ___|  _  \   |_|                  \n  ___________\ \    _   _| |__ | | | |                      \n |____________  )  | | | |  __|| | | |                      \n             / /   | |_| | |___| |/ /                       \n            /_/     \__, \____/|___/                        \n                     __/ |                                  \n                    |___/                                   \033[000m"""
-print(title)
-
-
-filename = "/Users/persephone/Downloads/google.com.xlsx"
-theFile = pd.read_excel(open(filename, 'rb'), header=0)
-
 global g
 g = pyyed.Graph()
-
-
 
 ################################################################################
 # remove all non-alphanumeric characters from a string (including spaces), for 
@@ -77,11 +67,11 @@ def lineColor(dnsrecordtype, _knownTypes = ["A", "AAAA", "AFSDB", "APL", "CAA", 
     color = "#{:02x}{:02x}{:02x}".format(*colorTuple).upper()
     return color 
 
-def __main__(theFile):
+def __main__(theFile, g):
     defineProps(theFile)
     # add a base node for all the records to attach to
     baseNodeName = ".".join(theFile["Hostname"].get(0).split(".")[:-1])
-    baseNode = g.add_node(baseNodeName, label=baseNodeName,\
+    baseNode = g.add_node("baseNode", label=baseNodeName,\
         label_alignment="center", shape="roundrectangle", font_family="Courier",\
             underlined_text="false", font_style="bold", font_size="14",\
                 shape_fill="#226f6d", transparent="false", border_color="#aacccb",\
@@ -102,7 +92,7 @@ def __main__(theFile):
                     transparent="false", border_color="#000000", border_type="line",\
                         custom_properties={"textColor":"#FFFFFF"})
 
-        g.add_edge(baseNodeName, nodename, description="Record Type", arrowhead="none", color=lineColor(recordType, list(recordTypes)))
+        g.add_edge("baseNode", nodename, description="Record Type", arrowhead="none", color=lineColor(recordType, list(recordTypes)))
 
     #Get the unique netblock owners, and create a group for each
     netblockOwners = set(theFile["Netblock Owner"].to_list()) 
@@ -152,5 +142,4 @@ def __main__(theFile):
     ################################################################################
 
 # and save
-__main__(theFile)
 g.write_graph('ggc.graphml', pretty_print=True)
