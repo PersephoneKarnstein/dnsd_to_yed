@@ -146,3 +146,93 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1629776117866	Marionette	INFO	Listening on port 65259
 1629776117979	Marionette	WARN	TLS certificate errors will be ignored for this session
 1629776117982	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:65253","sslProxy":"[::ffff:7f00:1]:65253"}
+1629819583966	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629831821087	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+1629831900285	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629832789941	geckodriver	INFO	Listening on 127.0.0.1:50191
+1629832790959	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileGeT3rM"
+*** You are running in headless mode.
+1629832791444	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileGeT3rM/search.json.mozlz4", (void 0)))
+1629832792780	Marionette	INFO	Listening on port 50198
+1629832792821	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629832792824	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:50190","sslProxy":"[::ffff:7f00:1]:50190"}
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629833530446	geckodriver	INFO	Listening on 127.0.0.1:50974
+1629833531462	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilenw79a1"
+*** You are running in headless mode.
+1629833531867	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilenw79a1/search.json.mozlz4", (void 0)))
+1629833533034	Marionette	INFO	Listening on port 50981
+1629833533124	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629833533127	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:50973","sslProxy":"[::ffff:7f00:1]:50973"}
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629833752819	geckodriver	INFO	Listening on 127.0.0.1:51588
+1629833753833	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilesciKEZ"
+*** You are running in headless mode.
+1629833754200	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilesciKEZ/search.json.mozlz4", (void 0)))
+1629833755368	Marionette	INFO	Listening on port 51595
+1629833755400	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629833755402	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:51587","sslProxy":"[::ffff:7f00:1]:51587"}
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629834043125	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629834096201	geckodriver	INFO	Listening on 127.0.0.1:52494
+1629834096217	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileHG27iy"
+*** You are running in headless mode.
+1629834096631	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileHG27iy/search.json.mozlz4", (void 0)))
+1629834097848	Marionette	INFO	Listening on port 52499
+1629834097895	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629834097898	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:52493","sslProxy":"[::ffff:7f00:1]:52493"}
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629834265236	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+1629834318590	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629834580384	geckodriver	INFO	Listening on 127.0.0.1:53587
+1629834580396	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileQK9Og6"
+*** You are running in headless mode.
+1629834580774	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileQK9Og6/search.json.mozlz4", (void 0)))
+1629834581925	Marionette	INFO	Listening on port 53592
+1629834581971	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629834581974	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:53586","sslProxy":"[::ffff:7f00:1]:53586"}
+1629834607911	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629834667177	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error

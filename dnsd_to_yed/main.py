@@ -114,12 +114,23 @@ def _main(theFile, g=g, savename=None):
         globals()[groupName] = g.add_group(groupName, label=netblockOwner,\
             label_alignment="center", shape="roundrectangle", \
                 closed="false", font_family="Courier", underlined_text="false", \
-                    font_style="plain", font_size="14", fill="#B4B4B4", transparent="true", \
-                        border_color="#000000", border_type="line", border_width="2.0")#, font_color="#FFFFFF")#custom_properties={"font_color":"#FFFFFF"}
+                    font_style="plain", font_size="12", fill="#B4B4B4", transparent="true", \
+                        border_color="#000000", border_type="line", border_width="2.0", font_color="#B4B4B4")
         
         #mask the dataframe to only show records owned by this netblock owner
         discriminator = theFile["Netblock Owner"] == netblockOwner
         nodesOwned = theFile[discriminator] 
+
+
+        #make groups by ip address as well
+        uniqueaddrs = set(nodesOwned["IP Address"].to_list())
+        for uniqueaddr in uniqueaddrs:
+            ipgroupName = "ipaddr"+fast_clean(uniqueaddr)
+            globals()[ipgroupName] = globals()[groupName].add_group(ipgroupName, label=uniqueaddr,\
+                label_alignment="center", shape="rectangle", \
+                    closed="false", font_family="Courier", underlined_text="false", \
+                        font_style="plain", font_size="14", fill="#494949", transparent="false", \
+                            border_color="#494949", border_type="line", border_width="2.0", font_color="#B4B4B4")#custom_properties={"font_color":"#FFFFFF"}
 
         # for each record in the mask, set each of the custom defined properties
         # to the value dnsdumpster reported
@@ -137,15 +148,15 @@ def _main(theFile, g=g, savename=None):
                     
             nodename = "recordFor"+ fast_clean(str(record["Hostname"]))
             recordtype = "recordType"+str(record["Type"]).strip()
-            
+            ipgroupName = "ipaddr"+fast_clean(str(record["IP Address"]))
 
-            try: globals()[groupName].add_node(\
+            try: globals()[ipgroupName].add_node(\
                 nodename,\
-                    label=str(record["IP Address"])+"\n"+str(record["Hostname"]),\
+                    label=str(record["Hostname"]),\
                         label_alignment="center", shape="rectangle", font_family="Arial",\
                             underlined_text="false", font_style="plain", font_size="12",\
-                                shape_fill="#b4b4b4", transparent="false", border_color="#494949",\
-                                    border_type="line", border_width="5.0", font_color="#494949", custom_properties=customProperties)
+                                shape_fill="#b4b4b4", transparent="false", border_color="#b4b4b4",\
+                                    border_type="line", border_width="0.0", font_color="#3f3f3f", custom_properties=customProperties)
             except RuntimeWarning: pass
             
             if str(record["Reverse DNS"]) != "nan":
