@@ -61,3 +61,18 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1629509054978	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:56005","sslProxy":"[::ffff:7f00:1]:56005"}
 1629509099648	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
 1629509565032	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629747679041	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629748027855	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629748129542	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629748250071	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629748272476	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629748351076	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629749315760	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629765566336	geckodriver	INFO	Listening on 127.0.0.1:61774
+1629765567258	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilel8OJaM"
+*** You are running in headless mode.
+1629765570768	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilel8OJaM/search.json.mozlz4", (void 0)))
+1629765572269	Marionette	INFO	Listening on port 61782
+1629765572344	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629765572348	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:61773","sslProxy":"[::ffff:7f00:1]:61773"}

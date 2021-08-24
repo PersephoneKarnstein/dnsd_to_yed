@@ -67,10 +67,21 @@ def lineColor(dnsrecordtype, _knownTypes = ["A", "AAAA", "AFSDB", "APL", "CAA", 
     color = "#{:02x}{:02x}{:02x}".format(*colorTuple).upper()
     return color 
 
-def __main__(theFile, g):
+def __main__(theFile, g=g, savename=None):
+    
     defineProps(theFile)
+
     # add a base node for all the records to attach to
     baseNodeName = ".".join(theFile["Hostname"].get(0).split(".")[:-1])
+
+    if savename is None:
+        savename = baseNodeName+".graphml"
+    elif savename.split('.')[-1] == "graphml":
+        savename = savename
+    else:
+        savename = savename+".graphml"
+    print("saving as "+savename)
+
     baseNode = g.add_node("baseNode", label=baseNodeName,\
         label_alignment="center", shape="roundrectangle", font_family="Courier",\
             underlined_text="false", font_style="bold", font_size="14",\
@@ -141,5 +152,5 @@ def __main__(theFile, g):
                         )
     ################################################################################
 
-# and save
-g.write_graph('ggc.graphml', pretty_print=True)
+    # and save
+    g.write_graph(savename, pretty_print=True)
