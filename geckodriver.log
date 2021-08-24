@@ -76,3 +76,73 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1629765572269	Marionette	INFO	Listening on port 61782
 1629765572344	Marionette	WARN	TLS certificate errors will be ignored for this session
 1629765572348	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:61773","sslProxy":"[::ffff:7f00:1]:61773"}
+1629766082041	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629769836038	geckodriver	INFO	Listening on 127.0.0.1:62506
+1629769837054	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileUeBVK0"
+*** You are running in headless mode.
+1629769837425	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileUeBVK0/search.json.mozlz4", (void 0)))
+1629769838576	Marionette	INFO	Listening on port 62513
+1629769838623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629769838628	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:62505","sslProxy":"[::ffff:7f00:1]:62505"}
+1629769852295	geckodriver	INFO	Listening on 127.0.0.1:62597
+1629769852307	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilehITex7"
+*** You are running in headless mode.
+1629769852668	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilehITex7/search.json.mozlz4", (void 0)))
+1629769853902	Marionette	INFO	Listening on port 62602
+1629769853972	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629769853974	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:62596","sslProxy":"[::ffff:7f00:1]:62596"}
+1629770348697	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629770364201	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629771320302	geckodriver	INFO	Listening on 127.0.0.1:63282
+1629771321318	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileClBOXb"
+*** You are running in headless mode.
+1629771321680	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileClBOXb/search.json.mozlz4", (void 0)))
+1629771322956	Marionette	INFO	Listening on port 63289
+1629771322989	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629771322996	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:63281","sslProxy":"[::ffff:7f00:1]:63281"}
+1629771399949	geckodriver	INFO	Listening on 127.0.0.1:63402
+1629771400962	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileokG1lO"
+*** You are running in headless mode.
+1629771401337	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofileokG1lO/search.json.mozlz4", (void 0)))
+1629771402507	Marionette	INFO	Listening on port 63409
+1629771402540	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629771402543	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:63401","sslProxy":"[::ffff:7f00:1]:63401"}
+1629771495253	geckodriver	INFO	Listening on 127.0.0.1:63525
+1629771496264	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilembfR6y"
+*** You are running in headless mode.
+1629771496635	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilembfR6y/search.json.mozlz4", (void 0)))
+1629771497908	Marionette	INFO	Listening on port 63532
+1629771497933	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629771497937	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:63524","sslProxy":"[::ffff:7f00:1]:63524"}
+1629771832949	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629771912360	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629772007664	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629775847068	geckodriver	INFO	Listening on 127.0.0.1:64970
+1629775848084	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilemzSUT1"
+*** You are running in headless mode.
+1629775848446	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilemzSUT1/search.json.mozlz4", (void 0)))
+1629775849618	Marionette	INFO	Listening on port 64977
+1629775849655	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629775849658	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:64969","sslProxy":"[::ffff:7f00:1]:64969"}
+1629776037217	geckodriver	INFO	Listening on 127.0.0.1:65135
+1629776037229	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofile7CJiOz"
+*** You are running in headless mode.
+1629776037588	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofile7CJiOz/search.json.mozlz4", (void 0)))
+1629776038713	Marionette	INFO	Listening on port 65140
+1629776038798	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629776038801	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:65134","sslProxy":"[::ffff:7f00:1]:65134"}
+1629776116396	geckodriver	INFO	Listening on 127.0.0.1:65254
+1629776116409	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilej6XzPf"
+*** You are running in headless mode.
+1629776116763	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilej6XzPf/search.json.mozlz4", (void 0)))
+1629776117866	Marionette	INFO	Listening on port 65259
+1629776117979	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629776117982	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:65253","sslProxy":"[::ffff:7f00:1]:65253"}

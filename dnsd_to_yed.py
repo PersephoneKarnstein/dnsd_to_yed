@@ -2,7 +2,7 @@ import pandas as pd
 import argparse, sys
 from pathlib import Path
 
-import _download_xlsx, main
+import dnsd_to_yed
 
 title = """\033[38;5;35m______ _   _  _____     _                           _            \n|  _  \ \ | |/  ___|   | |                         | |           \n| | | |  \| |\ `--.  __| |_   _ _ __ ___  _ __  ___| |_ ___ _ __ \n| | | | . ` | `--. \/ _` | | | | '_ ` _ \| '_ \/ __| __/ _ \ '__|\n| |/ /| |\  |/\__/ / (_| | |_| | | | | | | |_) \__ \ ||  __/ |   \n|___/ \_| \_/\____/ \__,_|\__,_|_| |_| |_| .__/|___/\__\___|_|   \n            __            ___________    | |                  \n            \ \          |  ___|  _  \   |_|                  \n  ___________\ \    _   _| |__ | | | |                      \n |____________  )  | | | |  __|| | | |                      \n             / /   | |_| | |___| |/ /                       \n            /_/     \__, \____/|___/                        \n                     __/ |                                  \n                    |___/                                   \033[000m"""
 print(title)
@@ -79,15 +79,15 @@ if args.listdomains is not None:
 
 if len(domain_list)>0:
     for domain in domain_list:
-        filename = _download_xlsx.dnsdumpster(domain)
+        filename = dnsd_to_yed._download_xlsx.dnsdumpster(domain)
         theFile = pd.read_excel(open(filename, 'rb'), header=0)
-        main.__main__(theFile)
+        dnsd_to_yed.main._main(theFile)
 
 
 if args.file is not None:
     if Path(args.file).is_file():
         theFile = pd.read_excel(open(args.file,'rb'), header=0)
-        main.__main__(theFile)
+        dnsd_to_yed.main._main(theFile)
 
 if args.listfiles is not None:
     print("Reading from list of files")
@@ -98,7 +98,7 @@ if args.listfiles is not None:
         print(extant_xlsxs)
         for filename in extant_xlsxs:
             theFile = pd.read_excel(open(filename, 'rb'), header=0)
-            main.__main__(theFile)
+            dnsd_to_yed.main._main(theFile)
 
     else: 
         raise IOError("The file specified does not exist.")

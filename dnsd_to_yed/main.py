@@ -1,6 +1,8 @@
-import pandas as pd
-import pyyed, urllib, warnings, math
+import warnings, math
 from matplotlib import cm #for colorization of arbitrary numbers of lines
+from . import modify_import
+
+pyyed = modify_import.modify_and_import("pyyed", None, modify_import.modification_func)
 
 global g
 g = pyyed.Graph()
@@ -39,7 +41,7 @@ def defineProps(theFile):
         safername = fast_clean(propertyName)
         g.define_custom_property("node", safername, "string", "")
 
-    g.define_custom_property("node", "textColor", "string", "#000000")
+    # g.define_custom_property("node", "font_color", "string", "#000000")
     ################################################################################
 
 def lineColor(dnsrecordtype, _knownTypes = ["A", "AAAA", "AFSDB", "APL", "CAA", "CDNSKEY", "CDS", "CERT", "CNAME", "CSYNC", \
@@ -67,7 +69,7 @@ def lineColor(dnsrecordtype, _knownTypes = ["A", "AAAA", "AFSDB", "APL", "CAA", 
     color = "#{:02x}{:02x}{:02x}".format(*colorTuple).upper()
     return color 
 
-def __main__(theFile, g=g, savename=None):
+def _main(theFile, g=g, savename=None):
     
     defineProps(theFile)
 
@@ -86,7 +88,7 @@ def __main__(theFile, g=g, savename=None):
         label_alignment="center", shape="roundrectangle", font_family="Courier",\
             underlined_text="false", font_style="bold", font_size="14",\
                 shape_fill="#226f6d", transparent="false", border_color="#aacccb",\
-                    border_type="line", border_width="5.0", custom_properties={"textColor":"#aacccb"})
+                    border_type="line", border_width="5.0", font_color="#aacccb")
 
 
     ################################################################################
@@ -101,7 +103,7 @@ def __main__(theFile, g=g, savename=None):
             shape="ellipse", font_family="Arial", underlined_text="false",\
                 font_style="bold", font_size="12", shape_fill="#000000",\
                     transparent="false", border_color="#000000", border_type="line",\
-                        custom_properties={"textColor":"#FFFFFF"})
+                        font_color="#FFFFFF")
 
         g.add_edge("baseNode", nodename, description="Record Type", arrowhead="none", color=lineColor(recordType, list(recordTypes)))
 
@@ -113,7 +115,7 @@ def __main__(theFile, g=g, savename=None):
             label_alignment="center", shape="roundrectangle", \
                 closed="false", font_family="Courier", underlined_text="false", \
                     font_style="plain", font_size="14", fill="#B4B4B4", transparent="true", \
-                        border_color="#000000", border_type="line", border_width="2.0")#custom_properties={"textColor":"#FFFFFF"}
+                        border_color="#000000", border_type="line", border_width="2.0")#, font_color="#FFFFFF")#custom_properties={"font_color":"#FFFFFF"}
         
         #mask the dataframe to only show records owned by this netblock owner
         discriminator = theFile["Netblock Owner"] == netblockOwner
@@ -143,11 +145,15 @@ def __main__(theFile, g=g, savename=None):
                         label_alignment="center", shape="rectangle", font_family="Arial",\
                             underlined_text="false", font_style="plain", font_size="12",\
                                 shape_fill="#b4b4b4", transparent="false", border_color="#494949",\
-                                    border_type="line", border_width="5.0", custom_properties=customProperties.update({"textColor":"#494949"}))
+                                    border_type="line", border_width="5.0", font_color="#494949", custom_properties=customProperties)
             except RuntimeWarning: pass
-
+            
+            if str(record["Reverse DNS"]) != "nan":
+                edgename = str(record["Reverse DNS"])
+            else: edgename = ""
+            
             g.add_edge(recordtype, nodename,\
-                label=str(record["Reverse DNS"]), description="Reverse DNS",\
+                label=edgename, description="Reverse DNS",\
                     color=lineColor(str(record["Type"]), list(recordTypes))\
                         )
     ################################################################################
