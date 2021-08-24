@@ -236,3 +236,7 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1629834581974	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:53586","sslProxy":"[::ffff:7f00:1]:53586"}
 1629834607911	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
 1629834667177	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629834770613	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
