@@ -240,3 +240,44 @@ JavaScript error: , line 0: uncaught exception: null
 JavaScript error: , line 0: uncaught exception: null
 1629834770613	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
 JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629834890391	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629834912052	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1629834990905	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629835092053	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+JavaScript error: , line 0: uncaught exception: null
+1629835682256	geckodriver	INFO	Listening on 127.0.0.1:54762
+1629835682271	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofile3BShFF"
+*** You are running in headless mode.
+1629835682657	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofile3BShFF/search.json.mozlz4", (void 0)))
+1629835683783	Marionette	INFO	Listening on port 54767
+1629835683839	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629835683843	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:54761","sslProxy":"[::ffff:7f00:1]:54761"}
+JavaScript error: , line 0: uncaught exception: null
+1629835715774	geckodriver	INFO	Listening on 127.0.0.1:54865
+1629835715790	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilee7tWTD"
+*** You are running in headless mode.
+1629835716156	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilee7tWTD/search.json.mozlz4", (void 0)))
+1629835717275	Marionette	INFO	Listening on port 54870
+1629835717361	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629835717364	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:54864","sslProxy":"[::ffff:7f00:1]:54864"}
+1629835738678	geckodriver	INFO	Listening on 127.0.0.1:54983
+1629835739695	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilessbRvK"
+*** You are running in headless mode.
+1629835740069	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ll/46b1yh3938xggzs__ygvh5rw0000gp/T/rust_mozprofilessbRvK/search.json.mozlz4", (void 0)))
+1629835741219	Marionette	INFO	Listening on port 54990
+1629835741265	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629835741269	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"[::ffff:7f00:1]:54982","sslProxy":"[::ffff:7f00:1]:54982"}
+JavaScript error: , line 0: uncaught exception: null
