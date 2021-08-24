@@ -140,3 +140,5 @@ cython_debug/
 # Don't actually want the graphs to be included in the git
 *.graphml
 *.xlsx 
+
+geckodriver.log
